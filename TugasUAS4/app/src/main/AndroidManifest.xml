@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aplikasi.alfibaihaqi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_islam"
+        android:label="Tugas UAS"
+        android:roundIcon="@mipmap/ic_islam"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AyataQuran"></activity>
+        <activity android:name=".NiatSholat" />
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".DzikirPagiActivity" />
+        <activity android:name=".Halal" />
+        <activity android:name=".Sholat" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

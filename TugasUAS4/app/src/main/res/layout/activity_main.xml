@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/hitam"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/allah" />
+    <TextView
+        android:id="@+id/txtArabLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="وَقٌل رَب زِدنِى عِلمًا"
+        android:fontFamily="@font/arab"
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtArtiLabel"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="“dan katakanlah:”Ya Allah tambahkanlah kepadaku ilmu.”"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtArabLabel"
+        android:fontFamily="@font/nextartbold"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/putih"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/txtAyatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nextartbold"
+        android:text="[ QS. Taaha: 114  ]"
+        android:textAlignment="center"
+        android:textColor="@color/putih"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtArtiLabel" />
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnradius"
+        android:id="@+id/produkhalal"
+        android:textAllCaps="false"
+        android:text="PRODUK"
+        android:fontFamily="@font/aero"
+        android:textSize="8dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/hitam"
+        android:drawableTop="@drawable/halals"
+        android:layout_width="@dimen/padding_layout_side"
+        android:layout_height="60dp"
+        android:paddingTop="2dp"/>
+
+    <Button
+        android:id="@+id/doaharian"
+        android:layout_width="@dimen/padding_layout_side"
+        android:layout_height="60dp"
+        android:background="@drawable/btnradius"
+        android:drawableTop="@drawable/qurannkopy"
+        android:fontFamily="@font/aero"
+        android:paddingTop="2dp"
+        android:text="LainLain"
+        android:textAllCaps="false"
+        android:textColor="@color/hitam"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/jadwalsholat"
+        android:layout_width="@dimen/padding_layout_side"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="2dp"
+        android:drawableTop="@drawable/tahajudkopy"
+        android:fontFamily="@font/aero"
+        android:text="JADWAL SHOLAT"
+        android:textAllCaps="false"
+        android:textColor="@color/hitam"
+        android:background="@drawable/btnradius"
+        android:textSize="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nextart"
+        android:paddingTop="115dp"
+        android:text="baihaqialfi"
+        android:textColor="@color/putih"
+        android:textSize="6dp"
+        android:paddingLeft="296dp"/>
+</LinearLayout>

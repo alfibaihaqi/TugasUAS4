@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sholat1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hitam"
+    tools:context=".Sholat">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/hitam"
+        android:padding="@dimen/padding">
+
+        <Spinner
+            android:id="@+id/kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putih"/>
+
+        <TextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/aero"
+            android:text="Tanggal"
+            android:textColor="@color/putih"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtArabLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arab"
+            android:text="إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَوْقُوتًا"
+            android:textColor="@color/putih"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtArtiLabel"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="“Sesungguhnya shalat itu adalah kewajiban yang ditentukan waktunya atas orang-orang yang beriman. ”"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtArabLabel"
+            android:fontFamily="@font/nextartbold"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/putih"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txtAyatLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/nextart"
+            android:text="[ Annisa' (4):103 ]"
+            android:textAlignment="center"
+            android:textColor="@color/putih"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtArtiLabel" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/topPanel"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:text="Subuh"/>
+
+            <TextView
+                android:id="@+id/tv_subuh"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Waktu"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:text="Dzuhur"/>
+
+            <TextView
+                android:id="@+id/tv_dzuhur"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Waktu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:text="Ashar"/>
+
+            <TextView
+                android:id="@+id/tv_ashar"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Waktu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:text="Maghrib"/>
+
+            <TextView
+                android:id="@+id/tv_maghrib"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Waktu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Isya"/>
+
+            <TextView
+                android:id="@+id/tv_isya"
+                android:textColor="@color/putih"
+                android:fontFamily="@font/aero"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Waktu"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

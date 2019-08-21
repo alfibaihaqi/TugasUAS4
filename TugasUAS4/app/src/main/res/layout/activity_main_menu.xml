@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hitam"
+    tools:context=".MainMenuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/allah" />
+
+    <TextView
+        android:id="@+id/txtArabLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="وَقٌل رَب زِدنِى عِلمًا"
+        android:fontFamily="@font/arab"
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtArtiLabel"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="“dan katakanlah:”Ya Allah tambahkanlah kepadaku ilmu.”"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtArabLabel"
+        android:fontFamily="@font/nextartbold"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/putih"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/txtAyatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nextart"
+        android:text="[ QS. Taaha: 114  ]"
+        android:textAlignment="center"
+        android:textColor="@color/putih"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtArtiLabel" />
+
+    <Button
+        android:id="@+id/buttonDzikirPagi"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btnradius"
+        android:drawableTop="@drawable/doacopi"
+        android:fontFamily="@font/aero"
+        android:onClick="clickDzikirPagi"
+        android:paddingTop="15dp"
+        android:paddingBottom="1dp"
+        android:text="DOA"
+        android:textColor="@color/hitam"
+        android:textSize="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNiatSholat"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="2dp"
+        android:drawableTop="@drawable/godcopi"
+        android:background="@drawable/btnradius"
+        android:fontFamily="@font/aero"
+        android:paddingTop="15dp"
+        android:paddingBottom="1dp"
+        android:text="KUMPULAN NIAT SHOLAT"
+        android:layout_gravity="center"
+        android:textColor="@color/hitam"
+        android:onClick="clickNiatSholat"
+        android:textSize="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonNiatSholat"/>
+
+    <Button
+        android:id="@+id/buttonAyatQuran"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btnradius"
+        android:drawableTop="@drawable/alqurancopi"
+        android:fontFamily="@font/aero"
+        android:onClick="clickAyatQuran"
+        android:paddingTop="15dp"
+        android:paddingBottom="1dp"
+        android:text="Ayat Alquran"
+        android:textColor="@color/hitam"
+        android:textSize="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonAyatQuran" />
+
+
+
+
+</LinearLayout>
